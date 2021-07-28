@@ -1,0 +1,97 @@
+.content__wrapper {
+  padding: 1rem;
+  margin: 2rem;
+
+  @include breakpoint-down(small) {
+    padding: 0;
+    margin: 2rem 2rem 0 2rem;
+  }
+}
+
+.bill {
+  &__field {
+    width: 100%;
+    height: 3rem;
+    margin-top: .75rem;
+    margin-bottom: 2.5rem;
+    background: $lighter-grayish-cyan;
+    border-radius: 4px;
+  }
+
+  h3:is(:nth-last-child(1)) {
+    visibility: hidden;
+
+    &.warning {
+      visibility: visible;
+      color: $warning;
+    }
+  }
+
+  img.dollar-icon {
+    position: absolute;
+    margin: 0 1.25rem;
+  }
+}
+
+.tip-buttons {
+  &__wrapper {
+    @include custom-grid-fit("9.25rem", "1fr");
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    grid-gap: .625rem;
+  }
+
+  &__btn {
+    &:not(:nth-last-child(1)) {
+      background: $very-dark-cyan;
+      color: $white;
+      cursor: pointer;
+
+      border: 0 {
+        radius: 4px;
+      }
+
+      font: {
+        family: 'Space Mono', monospace;
+        size: $font-lg;
+        weight: 700;
+      }
+
+      @include breakpoint-up(medium) {
+        &:hover {
+          background: $hover-color;
+          color: $very-dark-cyan;
+        }
+      }
+
+      &.active {
+        background: $strong-cyan;
+        color: $very-dark-cyan;
+      }
+    }
+  }
+}
+
+.num-of-ppl {
+  &__field {
+    width: 100%;
+    height: 3rem;
+    margin-top: .75rem;
+    background: $lighter-grayish-cyan;
+    border-radius: 4px;
+  }
+
+  h3:is(:nth-last-child(1)) {
+    visibility: hidden;
+
+    &.warning {
+      visibility: visible;
+      color: $warning;
+    }
+  }
+
+  img.person-icon {
+    position: absolute;
+    margin: 0 1.25rem;
+  }
+}
