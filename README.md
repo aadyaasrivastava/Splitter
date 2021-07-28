@@ -7,7 +7,7 @@ A calculator which helps you to calculate individual amount to pay along with th
 <img align="center" alt="Coding" height="200" width="1000" src="https://media.giphy.com/media/l378zXQJQU764E4ow/giphy.gif">
 <hr>
 
-<h3>With this <SPLITTER> its easy to <b>SPLIT</b> bills <br> <b> HAPPY CODING!!!</b></h3>
+<h3>With this <SPLITTER> its easy to <b>SPLIT</b> bills <br> </h3>
 
 <BR>
 <H4>  Hi guys this is a project via which you guys can practice your WEB DEV  skills. <br>Under this project we are making a calculator which can help you to split and tip       the bill with an ease. </H4>
