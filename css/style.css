@@ -1,0 +1,400 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: #c5e4e7;
+  color: #00494d;
+  padding: 0;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+body ::-moz-selection {
+  background: #5e7a7d;
+  color: #f4fafa;
+}
+
+body ::selection {
+  background: #5e7a7d;
+  color: #f4fafa;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 3rem;
+  background: #f4fafa;
+  text-align: right;
+  caret-color: #26c0ab;
+  color: #00494d;
+  padding: 0 1rem;
+  border: 3px solid #00000000;
+  border-radius: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 3px solid #26c0ab;
+}
+
+input[type=text].warning {
+  border: 3px solid #ff4646;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  height: 3rem;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-fd-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-ac-c {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid-gap {
+  gap: 1rem;
+}
+
+.attribution {
+  text-align: center;
+  margin: 1rem;
+}
+
+.attribution > a {
+  color: #5e7a7d;
+  text-decoration: underline;
+}
+
+.attribution > a:hover {
+  color: #26c0ab;
+}
+
+.main__container {
+  -ms-grid-columns: (minmax(23.4375rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(23.4375rem, 1fr));
+  width: 100%;
+  height: auto;
+  background: white;
+  border-radius: 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+@media (max-width: 39.9375em) {
+  .main__container {
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .main__container {
+    max-width: 80em;
+  }
+}
+
+.logo__splitter {
+  margin: 5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .logo__splitter {
+    margin: 3rem;
+  }
+}
+
+.content__wrapper {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+@media (max-width: 39.9375em) {
+  .content__wrapper {
+    padding: 0;
+    margin: 2rem 2rem 0 2rem;
+  }
+}
+
+.bill__field {
+  width: 100%;
+  height: 3rem;
+  margin-top: .75rem;
+  margin-bottom: 2.5rem;
+  background: #f4fafa;
+  border-radius: 4px;
+}
+
+.bill h3:is(:nth-last-child(1)) {
+  visibility: hidden;
+}
+
+.bill h3:is(:nth-last-child(1)).warning {
+  visibility: visible;
+  color: #ff4646;
+}
+
+.bill img.dollar-icon {
+  position: absolute;
+  margin: 0 1.25rem;
+}
+
+.tip-buttons__wrapper {
+  -ms-grid-columns: (minmax(9.25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(9.25rem, 1fr));
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  grid-gap: .625rem;
+}
+
+.tip-buttons__btn:not(:nth-last-child(1)) {
+  background: #00494d;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 40em) {
+  .tip-buttons__btn:not(:nth-last-child(1)):hover {
+    background: #9FE8DF;
+    color: #00494d;
+  }
+}
+
+.tip-buttons__btn:not(:nth-last-child(1)).active {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.num-of-ppl__field {
+  width: 100%;
+  height: 3rem;
+  margin-top: .75rem;
+  background: #f4fafa;
+  border-radius: 4px;
+}
+
+.num-of-ppl h3:is(:nth-last-child(1)) {
+  visibility: hidden;
+}
+
+.num-of-ppl h3:is(:nth-last-child(1)).warning {
+  visibility: visible;
+  color: #ff4646;
+}
+
+.num-of-ppl img.person-icon {
+  position: absolute;
+  margin: 0 1.25rem;
+}
+
+.results {
+  position: relative;
+  margin: 2rem 1.5rem;
+  background: #00494d;
+  border-radius: 14px;
+}
+
+@media (max-width: 63.9375em) {
+  .results {
+    margin: 1.5rem;
+  }
+}
+
+.results__wrapper {
+  margin: 2.625rem;
+}
+
+@media (max-width: 63.9375em) {
+  .results__wrapper {
+    margin: 2.875rem 1.5rem;
+  }
+}
+
+.results__tip-amount {
+  margin-bottom: 2rem;
+}
+
+.results__tip-amount > h1 {
+  color: #26c0ab;
+  font-weight: 700;
+  width: 70%;
+  text-align: right;
+  overflow: hidden;
+}
+
+@media (max-width: 63.9375em) {
+  .results__tip-amount > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.results__tip-amount > h2 {
+  color: white;
+  font-weight: 400;
+}
+
+.results__tip-amount > h2 > span {
+  color: #7f9c9f;
+}
+
+@media (max-width: 63.9375em) {
+  .results__tip-amount > h2 {
+    font-size: 0.875rem;
+  }
+}
+
+.results__total > h1 {
+  color: #26c0ab;
+  font-weight: 700;
+  width: 70%;
+  text-align: right;
+  overflow: hidden;
+}
+
+@media (max-width: 63.9375em) {
+  .results__total > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.results__total > h2 {
+  color: white;
+  font-weight: 400;
+}
+
+.results__total > h2 > span {
+  color: #7f9c9f;
+}
+
+@media (max-width: 39.9375em) {
+  .results__total > h2 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .button__wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2.625rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .button__wrapper {
+    padding: 1.5rem;
+  }
+}
+
+.button__reset {
+  background: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button__reset:hover {
+  background: #9FE8DF;
+}
+
+.button__reset:active {
+  background: #9FE8DF;
+}
+
+.button__reset.disabled {
+  background: rgba(38, 192, 171, 0.2);
+  cursor: default;
+}
+
+@media (max-width: 63.9375em) {
+  .button__reset {
+    font-size: 1.125rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
