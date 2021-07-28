@@ -1,10 +1,8 @@
 # Splitter
 A calculator which helps you to calculate individual amount to pay along with the tip :)
 
- <h1><b> <i> Colors used in this project </i> </b></h1> 
-<img align="center" alt="Coding" height="200" width="1000" src="https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/giphy.gif">
-<hr>
 
+<hr>
  <h1><b> <i> Blue Tip Calculator </i> </b></h1> 
 <img align="center" alt="Coding" height="200" width="1000" src="https://media.giphy.com/media/l378zXQJQU764E4ow/giphy.gif">
 <hr>
@@ -17,6 +15,9 @@ A calculator which helps you to calculate individual amount to pay along with th
 
 
 
+ <h1><b> <i> Colors used in this project </i> </b></h1> 
+<img align="center" alt="Coding" height="200" width="1000" src="https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/giphy.gif">
+<hr>
 <h3>Hi! in here im giving details of the colors to which you can refer and put in your project. <br> <b> HAPPY CODING!!!</b></h3>
 
 <BR>
