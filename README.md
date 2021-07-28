@@ -3,7 +3,7 @@ A calculator which helps you to calculate individual amount to pay along with th
 
 
 <hr>
- <h1><b> <i> Blue Tip Calculator </i> </b></h1> 
+ <h1><b> <i>  Tip Calculator </i> </b></h1> 
 <img align="center" alt="Coding" height="200" width="1000" src="https://media.giphy.com/media/l378zXQJQU764E4ow/giphy.gif">
 <hr>
 
